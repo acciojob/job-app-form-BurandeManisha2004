@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,37 +6,47 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form action="" method="post">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name" required>
-		<label for="email">Email</label>
-		<input type="email" id="email" placeholder="Email" required>
-		<label for="gen-m">Gender</label>
-		<input type="radio" name="gen" id="gen-m" required>Male
-		<input type="radio" name="gen" id="gen-f" required>Female
-		<label for="laptop">Laptop Brands</label>
-		<select id="laptop">
-			<option>Apple</option>
-			<option>Asus</option>
-			<option>HP</option>
-		</select>
-		<label for="age">Age</label>
-<input type="number" id="age" required>
-		<label for="dob">DOB</label>
-<input type="date" id="dob" required>
 
-			<label for="password">Password</label>
-<input type="password" id="password" required placeholder="Password">
-			<label for="portfolio">Profile Url</label>
-<input type="url" id="portfolio" required>
-		<button type="submit">submit</button>
-		
-		
-		
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+<form action="" method="post">
+
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name" placeholder="Name" required>
+
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email" placeholder="Email" required>
+
+	<label>Gender</label>
+	<input type="radio" name="gender" id="gen-m" value="male" required>
+	<label for="gen-m">Male</label>
+
+	<input type="radio" name="gender" id="gen-f" value="female" required>
+	<label for="gen-f">Female</label>
+
+	<label for="laptop">Laptop Brands</label>
+	<select id="laptop" name="laptop" required>
+		<option value="">--Select--</option>
+		<option value="apple">Apple</option>
+		<option value="asus">Asus</option>
+		<option value="hp">HP</option>
+	</select>
+
+	<label for="age">Age</label>
+	<input type="number" id="age" name="age" required>
+
+	<label for="dob">DOB</label>
+	<input type="date" id="dob" name="dob" required>
+
+	<label for="password">Password</label>
+	<input type="password" id="password" name="password" placeholder="Password" required>
+
+	<label for="portfolio">Profile URL</label>
+	<input type="url" id="portfolio" name="portfolio" required>
+
+	<button type="submit">Submit</button>
+
+</form>
+
+<script src="./script.js"></script>
 
 </body>
 
